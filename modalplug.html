@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Buttons</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    
+  </head>
+  <body>
+    <div class="container-fluid">
+       <button type="button" class="btn btn-primary" data-target="#emailModal" data-toggle="modal" data-ordernumber="1122">Order Number 1122 - Contact Us</button>
+        
+        <div class="modal" id="emailModal" role="dialog" aria-labelledby="thank" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 id="thank">Thank you for contacting us</h4>
+                        
+                        <div class="modal-body">
+                            <label for="inquiry">Your inquiry:</label>
+                            <textarea class="form-control" rows="5" id="inquiry"></textarea>
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cose</button>
+                            <button type="button" class="btn btn-primary">Send</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        $('#emailModal').on("show.bs.modal",function(){
+        //    window.alert("Opened email")
+            
+        });
+        $("#emailModal").on("show.bs.modal", function(event) {
+           var button = $(event.relatedTarget);
+            var ordernumber = button.data("ordernumber");
+            $("#thank").text("Thank you for contracting us " + ordernumber + ":");
+        })    
+          
+    </script>  
+  </body>
+</html>

@@ -54,6 +54,93 @@
                 <button type="submit" class="btn btn-default">Login</button>
                 </div>
         </form>
+        
+        <br>
+        <hr>
+        
+        <form>
+            <label for="comment"> Comments:</label>
+            <textarea rows="5" id="comment" class="form-control">
+            </textarea>    
+        
+            <div class="checkbox">
+            <label><input type="checkbox" id="check1" value="valueOne">Checkbox One</label>
+            <label><input type="checkbox" id="check2" value="valueTwo">Checkbox Two</label>    
+            </div>
+            
+            <div class="radio">
+            <label><input type="radio" name="radios" id="radio1" value="option1">Rad Op One</label>
+            </div>
+            
+            <div class="radio">
+            <label><input type="radio" name="radios" id="radio2" value="option2">Rad Op Two</label>
+            </div>
+            
+            <div class="radio">
+            <label><input type="radio" name="radios" id="radio3" value="option3" disabled>Rad Op Three</label>
+            </div>
+            
+            <br>
+            <hr>
+            
+            <select multiple class="form-control">
+                <option>One</option>
+                <option>Two</option>
+                <option>Three</option>
+                <option>Four</option>
+            </select>
+            
+            <br>
+            <hr>
+            
+            <input type="text" class="form-control" placeholder="Text Input" disabled>
+            
+            <br>
+            <hr>
+            
+            <div class="row">
+            <div class="form-group has-success col-xs-2">
+            <label for=text1 class="sr-only"> Text Input One:</label>
+            <input type="text" class="form-control" id="text1" placeholder="Text One">
+            </div>
+            
+            
+            <div class="form-group has-error col-xs-6">
+            <label for=text2 class="sr-only"> Text Input Two:</label>
+            <input type="text" class="form-control" id="text2" placeholder="Text Two">
+            </div>
+                
+            <div class="form-group has-warning col-xs-4">
+            <label for=text3 class="sr-only"> Text Input Three:</label>
+            <input type="text" class="form-control" id="text3" placeholder="Text Three">
+            </div> 
+            </div> 
+            
+            <br>
+            <hr>
+                
+            <div class="input-group has-feedback has-success"> 
+            <label for=text4 class="sr-only"> Text Input One:</label>
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" id="text4" placeholder="Text Four">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span class="sr-only">success</span>
+            </div>
+            
+            <br>
+            <hr>
+            
+            <div class="input-group has-feedback has-success"> 
+            <label for=text5 class="sr-only"> Text Input One:</label>
+            <span class="input-group-btn">
+            <button type="button" class="btn">Enter
+            </button></span>
+            <input type="text" class="form-control" id="text5" placeholder="Text Five">
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                <span class="sr-only">success</span>
+            </div>
+            
+        </form>
       </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
